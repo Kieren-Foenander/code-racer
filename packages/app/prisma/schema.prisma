@@ -177,3 +177,22 @@ model SnippetVote {
     @@id([userId, snippetId])
     @@map("snippet_votes")
 }
+
+model Theme {
+    id String @id @default(cuid())
+    name String 
+    background String
+    muted String
+    popover String
+    card String
+    border String
+    input String
+    primary String
+    secondary String
+    accent String
+    destructive String
+    success String
+    warning String
+    ring String
+    monochrome String
+}

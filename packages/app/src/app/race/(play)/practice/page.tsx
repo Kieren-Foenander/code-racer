@@ -7,7 +7,7 @@ import { CacheBuster } from "@/components/cache-buster";
 import { Language, isValidLanguage } from "@/config/languages";
 import { redirect } from "next/navigation";
 
-async function getSearchParamSnippet(snippetId: string | string[]) {
+export async function getSearchParamSnippet(snippetId: string | string[]) {
   if (typeof snippetId === "string") {
     return await getSnippetById(snippetId);
   }
