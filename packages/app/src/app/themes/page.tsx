@@ -18,6 +18,7 @@ export default async function ThemeBuilderPage() {
   return (
     <main>
       <CacheBuster />
+      <ColorPalette />
       {snippet && (
         <div className="pt-8">
           <RaceTheme snippet={snippet} user={user} />
@@ -29,7 +30,6 @@ export default async function ThemeBuilderPage() {
           language={language}
         />
       )}
-      <ColorPalette />
     </main>
   );
 }
