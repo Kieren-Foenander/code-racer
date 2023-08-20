@@ -21,7 +21,7 @@ type RacePracticeProps = {
 
 export default function RaceTheme({ user, snippet }: RacePracticeProps) {
   const input = " ";
-  const textIndicatorPosition = 1;
+  const textIndicatorPosition = 10;
 
   const inputElement = useRef<HTMLInputElement | null>(null);
   const code = snippet.code.trimEnd();
